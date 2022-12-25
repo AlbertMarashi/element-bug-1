@@ -16,5 +16,13 @@ module.exports = {
 		browser: true,
 		es2017: true,
 		node: true
+	},
+	rules: {
+		"arrow-parens": ["error", "as-needed", { requireForBlockBody: false }],
+		// disallow semi-colon
+		"semi": ["error", "never"],
+		"quotes": ["error", "double"],
+		"indent": ["error", 4, { "MemberExpression": 1 }],
+		"array-element-newline": ["error", "consistent"],
 	}
 };
